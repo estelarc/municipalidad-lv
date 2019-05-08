@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Roboto');
+
+
+/* Globales */
+html,
+body{
+height: 100%;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+div,
+p,
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+h1{
+    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Archivo Black', sans-serif;
+
+
+}
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+/* Mobile */
+.fondo{
+    background-image: url(../img/fondo_muni.jpg);
+    height: 100vh;
+    background-position:top left;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+}
+.fondo::before{
+    content: " ";
+    position: absolute;
+    background-color: rgba(0,0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.contenedor{
+    position: absolute;
+    z-index: 2;
+    padding: 0 21px;
+    
+}
+.img_logo {
+    width: 50%;
+}
+.img_logo img{
+    margin-top: 42px;
+    width: 100%;
+}
+.informacion_1{
+    /* margin-top: 42px; */
+    text-align: center;
+    color: white;
+}
+.informacion_1 h1{
+    margin-bottom: 14px;
+    font-size: 27px;
+}
+.formulario{
+    margin-top: 14px;
+    text-align: center;
+}
+input{
+    width: 100%;
+    height: 42px;
+    margin-top: 14px;
+    border-radius: 10px;
+    border: 1px solid #bf0b7e;
+    padding: 0 14px;
+
+}
+input:last-child{
+    border: none;
+    background-color: #bf0b7e;
+    color: white;
+}
+.informacion_2{
+    margin-top: 21px;
+    color: white;
+}
+
+@media only screen and (min-width:375px){
+    .informacion_1 h1{
+        font-size: 35px;
+    }
+    .informacion_2{
+        margin-top: 7px;
+    }
+    .informacion_2 p{
+        font-size: 14px;
+    }
+    .contenedor{
+        padding: 14px 42px 0 42px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width:768px){
+    .img_logo{
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .contenedor_informacion{
+        width: 100%;
+        margin: 0 auto;
+        padding: 14px;
+        border-radius: 21px;
+        margin-top: 14px;
+    }
+    .contenedor{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    }
+
+}

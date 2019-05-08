@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Roboto');
+
+
+/* Globales */
+html,
+body{
+height: 100%;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+div,
+p,
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+h1{
+    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Archivo Black', sans-serif;
+
+
+}
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+.fondo_2{
+    background-image: url(../img/fondo_desktop.jpg);
+    height: 100vh;
+    background-position:top left;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos Seleccion*/
+.img_logo_2{
+    margin: 0 auto;
+    width: 21%;
+}
+.img_logo_2 img{
+    width: 100%;
+    margin: 14px;
+}
+.titulo{
+    margin-top: 35px;;
+}
+.titulo h1{
+    text-align: center;
+}
+.contenedor_2{
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    border-radius: 21px;
+    padding: 0 50px;
+    box-shadow: 7px 6px 12px 0px rgba(0,0,0,0.75);
+    
+}
+.contenedor_2 h2{
+    margin-top: 20px;
+}
+
+.contenedor_2 a{
+    display: block;
+    padding: 7px 14px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;;
+    font-size: 20px;
+    margin: 20px auto;
+    width: 54%;
+    text-transform: uppercase;
+}
+
+/* Estilos Informacion*/
+
+select{
+    margin: 21px auto;
+    display: block;
+    font-size: 14px;
+    height: 28px;
+    border-radius: 7px;
+}
+
+.btn_enviar{
+    width: 50%;
+    font-size: 14px;
+    margin-bottom: 21px;
+    margin-top: 0;
+}
+#txtarea{
+    margin-bottom: 21px;
+    border-radius: 10px;
+    border: 0.5px solid black;
+}
+.contenedor_2 p{
+    /* text-align: left; */
+    margin: 7px 0;
+}

@@ -1,0 +1,73 @@
+create database municipalidad
+
+use municipalidad
+
+create table usuario(
+cod_usuario int, -- codigo de contrinuyente
+nom_usuario varchar(30),
+ape_usuario varchar (30),
+dir_usuario varchar (30),
+tel_usuario int,
+nac_usuario datetime,
+email_usuario varchar (30),
+sex_usuario varchar (30),
+pass_usuario varchar (30),
+CONSTRAINT PK_usuario PRIMARY KEY(cod_usuario))
+
+create table quejas(
+cod_queja int,
+tema_queja varchar (50),
+subtema_queja varchar (50),
+detalle_queja varchar (100),
+CONSTRAINT PK_quejas PRIMARY KEY(cod_queja))
+
+
+create table reclamo(
+cod_reclamo int,
+tema_reclamo varchar (50),
+subtema_reclamo varchar (50),
+detalle_reclamo varchar (100),
+CONSTRAINT PK_reclamo PRIMARY KEY(cod_reclamo))
+
+
+
+create table informes(
+cod_informe int,
+tema_informe varchar (50),
+subtema_informe varchar (50),
+detalle_informe varchar (100),
+CONSTRAINT PK_informes PRIMARY KEY(cod_informe))
+
+
+create table registro_quejas(
+id_quejas int,
+cod_usuario int,
+cod_quejas int,
+fecha_queja datetime,
+estado_queja int,
+CONSTRAINT PK_registro_quejas_id_quejas PRIMARY KEY(id_quejas),
+CONSTRAINT FK_registro_quejas_cod_usuario FOREIGN KEY (cod_usuario) REFERENCES usuario(cod_usuario))
+
+create table registro_reclamo(
+id_reclamo int,
+cod_usuario int,
+cod_reclamo int,
+fecha_reclamo datetime,
+estado_reclamo int,
+CONSTRAINT PK_registro_reclamo_id_reclamo PRIMARY KEY(id_reclamo),
+CONSTRAINT FK_registro_reclamo_cod_usuario FOREIGN KEY (cod_usuario) REFERENCES usuario(cod_usuario))
+
+create table registro_informacion(
+id_informacion int,
+cod_usuario int,
+cod_informacion int,
+fecha_informacion datetime,
+estado_informacion int,
+CONSTRAINT PK_registro_informacion_id_informacion PRIMARY KEY(id_informacion),
+CONSTRAINT FK_registro_informacion_cod_usuario FOREIGN KEY (cod_usuario) REFERENCES usuario(cod_usuario))
+
+
+
+
+
+
