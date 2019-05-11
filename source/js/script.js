@@ -1,32 +1,32 @@
 var data = {
-    tema: {
-        'Agua': [
-            '--',
-            'Agua-1',
-            'Agua-2',
+    slcArea: {
+        'Quejas': [
+            'Demora de respuesta',
+            'Trato inadecuado',
+            'No conforme con respuesta',
+            'Otro'
         ],
-        'Luz': [
-            '--',
-            'Luz-1',
-            'Luz-2'
+        'Reclamos': [
+            'Seguridad ciudadana',
+            'Pistas y veredas',
+            'Parques y jardines',
+            'Ruidos molestos',
+            'Residuos sólidos y contaminación',
+            'Agua y saneamiento',
+            'Otros'
         ],
-        'Desagüe':[
-            '--',
-            'Desagüe-1',
-            'Desagüe-2'
-        ]
     }
 }
 
-$('select[name="tema"]').on('change', function() {
+$('select[name="slcArea"]').on('change', function() {
     var value = $(this).val()
 
     if (value) {
-        $.each(data.tema[value], function(index, value) {
+        $.each(data.slcArea[value], function(index, value) {
             if (index === 0) {
-                $('select[name="subtema"]').html('<option value="' + value + '">' + value + '</option>')
+                $('select[name="slcMotivo"]').html('<option value="' + value + '">' + value + '</option>')
             } else {
-                $('select[name="subtema"]').append('<option value="' + value + '">' + value + '</option>')
+                $('select[name="slcMotivo"]').append('<option value="' + value + '">' + value + '</option>')
             }
         })
     }
