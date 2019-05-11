@@ -19,20 +19,30 @@
         <div class="img_logo_2">
             <img src="../img/logofinal-vistas.png" alt="Logo La victoria">
         </div>
-        <form action="" class="contenedor_2">
-            <h2>REGISTRO DE QUEJAS Y RECLAMOS</h2>
-            <select name="slcArea" id="slcArea">
-                <option disabled selected>Seleccione el Registro</option>
-                <option value="Queja">Quejas</option>
-                <option value="Reclamo">Reclamos</option>
-            </select>
-            <select name="slcMotivo">
-                <option value="Motivo">Motivo</option>
-            </select>
-            <p>Precise más detalles:</p>
-            <textarea name="Detalles" id="txtarea" cols="50%" rows="10%"></textarea>
-            <input type="submit" value="Enviar" class="btn_enviar">
-        </form>
+        <div class="contenedor_2">
+            <form action="">
+                <h2>REGISTRO DE QUEJAS Y RECLAMOS</h2>
+                <select name="slcArea" id="slcArea">
+                    <option disabled selected>Seleccione el Registro</option>
+                    <option value="Queja">Quejas</option>
+                    <option value="Reclamo">Reclamos</option>
+                </select>
+                <select name="slcMotivo">
+                    <option value="Motivo">Motivo</option>
+                </select>
+                <p>Precise más detalles:</p>
+                <textarea name="Detalles" id="txtarea" cols="50%" rows="10%"></textarea>
+                <input type="submit" value="Enviar" class="btn_enviar">
+            </form>
+            <div class="return-login">
+                <a href="/">
+                    <img src="../img/icon-arrow-return.svg" alt="arrow return">
+                    <span>
+                        REGRESAR AL INICIO
+                    </span>
+                </a>
+            </div>        
+        </div>
     </section>
     <script src="../js/script.js"></script>
 </body>
