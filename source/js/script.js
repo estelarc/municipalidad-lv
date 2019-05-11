@@ -1,12 +1,12 @@
 var data = {
     slcArea: {
-        'Quejas': [
+        'Queja': [
             'Demora de respuesta',
             'Trato inadecuado',
             'No conforme con respuesta',
             'Otro'
         ],
-        'Reclamos': [
+        'Reclamo': [
             'Seguridad ciudadana',
             'Pistas y veredas',
             'Parques y jardines',
