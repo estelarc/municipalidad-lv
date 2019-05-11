@@ -105,6 +105,53 @@ input:last-child{
     color: white;
 }
 
+nav.icon-bar-info {
+    margin-top: 35px;
+}
+
+nav.icon-bar-info a {
+    height: auto;
+    width: calc(80%/3);
+    margin: 7px;
+    padding: 14px 0 14px;
+    display: inline-block;
+    background-color: blueviolet;
+}
+
+nav.icon-bar-info a img{
+    width: 35%;
+}
+
+
+div.return-login {
+    text-align: center;
+}
+
+div.return-login a {
+    background-color: transparent;
+}
+
+div.return-login a img{
+    width: 8%;
+}
+
+div.return-login a span {
+    font-size: small;
+    color: black;
+}
+
+div.return-login a img,
+div.return-login a span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav.icon-bar-info a p{
+    text-align: center;
+    font-size: small;
+    color: white;
+}
+
 @media only screen and (min-width:375px){
     .informacion_1 h1{
         font-size: 35px;
