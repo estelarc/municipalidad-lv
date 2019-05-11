@@ -45,7 +45,7 @@ html{
 /* Estilos Seleccion*/
 .img_logo_2{
     margin: 0 auto;
-    width: 21%;
+    width: 12%;
 }
 .img_logo_2 img{
     width: 100%;
@@ -60,7 +60,7 @@ html{
 .contenedor_2{
     position: absolute;
     left: 50%;
-    top: 68%;
+    top: 64%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     background-color: rgb(228, 222, 222);
