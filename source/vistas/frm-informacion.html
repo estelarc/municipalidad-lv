@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <title>Seleccion de Servicio</title>
+    <title>Solicitud de información</title>
 </head>
 <body>
     <section class="fondo_2 clearfix">
         <div class="titulo">
-            <h1>SISTEMA DE REGISTRO DE QUEJAS, RECLAMOS Y ACCESO A INFORMACIÓN</h1>
+            <h1>RECLAMOS MUNICIPALES, SOLICITUDES DE INFORMACIÓN Y QUEJAS POR ATENCIÓN</h1>
+            <h1 style="color:rgb(191,11,126);">"RI-Q"</h1>
         </div>
         <div class="img_logo_2">
             <img src="../img/logofinal-vistas.png" alt="Logo La victoria">
@@ -22,15 +23,22 @@
         <form action="" class="contenedor_2">
             <h2>SOLICITUD DE INFORMACIÓN</h2>
             <select name="tema">
-                <option disabled selected>Selección de Tema</option>
-                <option value="Agua">Agua</option>
-                <option value="Luz">Luz</option>
-                <option value="Desagüe">Desagüe</option>
+                <option disabled selected>Seleccione el tema</option>
+                <option value="tributario">Tributario</option>
+                <option value="licencias de edificación">Licencias de edificación</option>
+                <option value="habilitaciones urbanas">Habilitaciones urbanas</option>
+                <option value="licencias funcionamiento comercio anuncios">Licencias de funcionamiento, comercio y anuncios</option>
+                <option value="fiscalizacion de desastres y seguridad">Fiscalización de desastres y seguridad</option>
+                <option value="registro civil">Registro civil - Matrimonio y otros</option>
+                <option value="ambiental">Ambiental</option>
+
             </select>
-            <select name='subtema'>
-                <option value='SubTema'>SubTema</option>
+            <select name='detalle'>
+                <option disabled selected>Seleccione detalle</option>
+                <option value='requisitos'>Requisitos</option>
+                <option value='canales'>Canales de atención</option>
             </select>
-            <input type="submit" value="Solicitar" class="btn_enviar">
+            <input type="submit" value="Ver información" class="btn_enviar">
         </form>
     </section>
     <script src="../js/script.js"></script>
