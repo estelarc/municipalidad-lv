@@ -23,7 +23,13 @@
         <div class="contenedor_2">
             <form action="">
                 <h2>SOLICITUD DE INFORMACIÓN</h2>
-                <select name="tema">
+                <select class="detalle" name='detalle'>
+                    <option disabled selected>Seleccione detalle</option>
+                    <option value='requisitos'>Requisitos</option>
+                    <option value='canales'>Canales de atención</option>
+                </select>
+
+                <select class="tema" name="tema">
                     <option disabled selected>Seleccione el tema</option>
                     <option value="tributario">Tributario</option>
                     <option value="licencias de edificación">Licencias de edificación</option>
@@ -34,14 +40,14 @@
                     <option value="ambiental">Ambiental</option>
 
                 </select>
-                <select name='detalle'>
-                    <option disabled selected>Seleccione detalle</option>
-                    <option value='requisitos'>Requisitos</option>
-                    <option value='canales'>Canales de atención</option>
-                </select>
-                <input type="submit" value="Ver información" class="btn_enviar">
+                <input type="submit" value="Ver información" class="btn_enviar" id="btn_enviar" style="cursor: pointer;">
             </form>
 
+            <a href="" class="download pdf" id="Download" >PDF </a>
+            <div class="info">
+                <h6 class="tele">Teléfono: </h6>
+                <p class="anex">Anexo:</p>
+            </div>
             <div class="return-login">
                 <a href="/">
                     <img src="../img/icon-arrow-return.svg" alt="arrow return">

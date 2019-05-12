@@ -33,6 +33,20 @@ html{
     box-sizing: inherit;
 }
 
+.pdf {
+    font-size: small !important;
+}
+
+.tele {
+    font-size: 16px;
+    margin: 0;
+}
+
+.anex {
+    font-size: 14px;
+    margin: 0;
+}
+
 /* Clearfix */
 .clearfix:before,
 .clearfix:after {

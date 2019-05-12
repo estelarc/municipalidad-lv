@@ -31,3 +31,37 @@ $('select[name="slcArea"]').on('change', function() {
         })
     }
 })
+
+
+function Datadinamic() {
+    $(".download").hide();
+    $(".info").hide();
+
+    $('select.detalle').on('change', function() {
+        var valueDetail = $('select.tema option:selected').attr('value');    
+        
+        if(jQuery('select option:selected').attr("value") == 'canales') {
+            $(".download").hide();
+            $(".info").show();
+
+            $('select.tema').on('change', function() {
+                var valueTheme = jQuery('select.tema option:selected').attr('value').replace(/ /g,"-");
+                $(".tele").text("Teléfono:" + " " + valueTheme);
+                $(".anex").text("Anexo:" + " " + valueTheme);
+            });
+        } 
+
+        if(jQuery('select option:selected').attr("value") == 'requisitos') {
+            $(".download").show();
+            $(".info").hide();
+    
+            $('select.tema').on('change', function() {
+                var valueTheme = jQuery('select.tema option:selected').attr('value').replace(/ /g,"-");
+                $('a#Download').attr({target: '_blank', href  : valueTheme + '.pdf'});
+                $('a#Download').text("PDF :" + valueTheme )
+            });
+        }
+    });
+}
+
+Datadinamic();
