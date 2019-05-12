@@ -124,8 +124,8 @@ nav.icon-bar-info {
 }
 
 nav.icon-bar-info a {
-    height: auto;
-    width: calc(80%/3);
+    width: 100%;
+    margin: 0;
     margin: 7px;
     padding: 14px 0 14px;
     display: inline-block;
@@ -190,6 +190,15 @@ nav.icon-bar-info a p{
     .img_logo{
         margin: 0 auto;
         width: 60%;
+    }
+    
+    nav.icon-bar-info a {
+        margin: 7px;
+        height: auto;
+        width: calc(80%/3);
+        padding: 14px 0 14px;
+        display: inline-block;
+        background-color: blueviolet;
     }
 
     .contenedor_informacion{
